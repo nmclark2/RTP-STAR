@@ -113,7 +113,7 @@ if ~exist('timethreshold', 'var') || isempty(timethreshold)
     timethreshold = 1.25;
 end
 if ~exist('edgenumber', 'var') || isempty(edgenumber)
-    edgenumber = [1,1.5,2];
+    edgenumber = [0.5,1.5,2];
 end
 if ~exist('connecthubs', 'var') || isempty(connecthubs)
     connecthubs=false;

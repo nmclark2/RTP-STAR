@@ -1,5 +1,5 @@
 # RTP-STAR #
-Regression Tree Pipeline for Spatial, Temporal, And Replicate data (RTP-STAR)
+Regression Tree Pipeline for Spatial, Temporal, And Replicate data (RTP-STAR) for MATLAB
 
 Author:
 Natalie M. Clark

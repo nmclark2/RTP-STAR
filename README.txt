@@ -13,6 +13,9 @@ Inferring regulatory networks from expression data using tree-based methods.
 PLoS ONE, 5(9):e12776, 2010. Original code available at
 https://github.com/vahuynh/GENIE3.
 
+Before running RTP-STAR, the GENIE3_MATLAB folder must be downloaded and compiled.
+Please read the README_GENIE3.txt file in the GENIE3_MATLAB folder for instructions on how to do this.
+
 ##########################################
 
 To run RTP-STAR, call the function RTPSTAR_MAIN from the MATLAB command window, entering whatever values/filenames you choose for each parameter:

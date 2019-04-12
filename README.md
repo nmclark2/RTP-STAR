@@ -2,7 +2,7 @@
 Regression Tree Pipeline for Spatial, Temporal, And Replicate data (RTP-STAR)
 
 Author:
-Natalie M. Clark
+Natalie M. Clark\n 
 Email: nmclark2@iastate.edu
 Last updated: April 12, 2019
 

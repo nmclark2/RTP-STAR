@@ -122,8 +122,6 @@ if ~exist('output_file', 'var') || isempty(output_file)
 end
 
 %read in DE genes
-%first column is AGI numbers
-%second column is TF indicator (1=TF, 0=non-TF)
 DE_genes = readtable(genes_file);
 
 %read in file that contains expression data and get data for DE genes

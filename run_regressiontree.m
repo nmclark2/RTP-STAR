@@ -71,7 +71,9 @@ isTF = table2array(expression_data(:,2));
 
 %convert tables to matrix without gene names
 matrix = table2array(expression_data(:,3:size(expression_data,2)));
-timecourse = table2array(time_data(:,2:size(time_data,2)));
+if istimecourse 
+    timecourse = table2array(time_data(:,2:size(time_data,2)));
+end
 
 %if we use clustering, use only genes in the applicable cluster
 if exist('clusterfile', 'var') && ~isempty(clusterfile)

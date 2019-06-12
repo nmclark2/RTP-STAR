@@ -1,5 +1,4 @@
-# RTP-STAR #
-Regression Tree Pipeline for Spatial, Temporal, And Replicate data (RTP-STAR) for MATLAB
+####README for RTP-STAR####
 
 Author:
 Natalie M. Clark
@@ -13,10 +12,24 @@ Inferring regulatory networks from expression data using tree-based methods.
 PLoS ONE, 5(9):e12776, 2010. Original code available at
 https://github.com/vahuynh/GENIE3.
 
-Before running RTP-STAR, the GENIE3_MATLAB folder must be downloaded and compiled.
-Please read the README_GENIE3.txt file in the GENIE3_MATLAB folder for instructions on how to do this.
+##########################################
+
+INSTALLATION
+
+1) Download and extract the RTP-STAR .zip folder
+2) Add the RTP-STAR folder to your path in MATLAB
 
 ##########################################
+
+VERSION INFORMATION
+
+RTP-STAR can be run on MATLAB 2014b and newer.
+
+The Statistics and Machine Learning toolbox is required for the clustering step only. If you do not have this toolbox please contact nmclark2@iastate.edu for clustering code that does not require this toolbox.
+
+###########################################
+
+RUNNING INSTRUCTIONS
 
 To run RTP-STAR, call the function RTPSTAR_MAIN from the MATLAB command window, entering whatever values/filenames you choose for each parameter:
 RTPSTAR_MAIN(numiters, maxprop, genes_file, expression_file, clustering_file, timecourse_file, symbol_file, connecthubs, clusteringseed, clustering_type, usepresetclusters, presetclustersfile, output_file)

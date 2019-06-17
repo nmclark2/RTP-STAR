@@ -89,12 +89,6 @@
 
 function RTPSTAR_MAIN(numiters, maxprop, genes_file, expression_file, clustering_file, timecourse_file, symbol_file, connecthubs, clusteringseed, clustering_type, usepresetclusters, presetclustersfile, output_file)
 
-%add path for GENIE3 files
-%NOTE: this assumes that GENIE3 files have already been downloaded and
-%compiled in a folder called GENIE3_MATLAB. Please read README_GENIE3.txt file for
-%instructions on how to do this.
-addpath('GENIE3_MATLAB','GENIE3_MATLAB/RT','GENIE3_MATLAB/RT/rtree-c')
-
 %check if variables exist and if not insert default values
 if ~exist('numiters', 'var') || isempty(numiters)
     numiters = 1;
@@ -152,6 +146,7 @@ else
     timecourse = timecourse(ismember(timecourse{:,1},DE_genes{:,1}),:);
     istimecourse=true;
 end
+
 
 %read in file with gene names
 if exist('symbol_file','var') && ~isempty(symbol_file)

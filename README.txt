@@ -71,7 +71,7 @@ GRN inference. (REQUIRED)
 Expression data should be formatted as:
 Rows are genes, columns are experiments
 Column 1: genes
-Column 2: Indicator variable (1=TF, 0=non-TF)
+Column 2: Indicator variable (1=TF, 0=non-TF). We include a file called "Arabidopsis_TFs_AGRIS.xlsx" that can be used to identify TFs for Arabidopsis samples.
 Columns 3 to whatever: expression data with biological replicates separate (you
 can use just means if you choose to, but RTP-STAR performance increases using replicates)
 
@@ -90,7 +90,7 @@ Column 1: genes
 Columns 2 to whatever: average gene expression data for each time point
 
 symbol_file: .csv or .txt file that contains genes (column 1) and their
-known gene ID symbols (column 2) (optional)
+known gene ID symbols (column 2) (optional). We include a file called "Locus_Primary_Gene_Symbol_2013" that can be used for Arabidopsis gene symbols.
 
 connecthubs: allows you to connect the hubs of each cluster, where hubs
 are defined as the node(s) with the most output edges in each cluster.

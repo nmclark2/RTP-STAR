@@ -9,3 +9,5 @@ Your output files will be named "clusters.csv" for the clusters and "biograph_fi
 Since we are setting the cluster seed to 1, you should obtain the same clusters (and therefore the same network) each time.
 
 Runtime should be less than 1 minute.
+
+Note that you will probably see warnings about variable names. This is OK and does not affect the network output.
